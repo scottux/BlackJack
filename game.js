@@ -5,7 +5,7 @@
 var Card = function (suit, number){
     /** @returns {Number} The number of the card in the deck. (1-52) */
     this.getNumber = function (){
-        return number;  
+        return number;
     };
     /** @returns {String} The name of the suit. "Hearts","Clubs","Spades", or "Diamonds." */
     this.getSuit = function (){
@@ -16,13 +16,13 @@ var Card = function (suit, number){
                 break;
             case 2:
                 suitName = "Clubs";
-                break; 
+                break;
             case 3:
                 suitName = "Spades";
-                break; 
+                break;
             case 4:
                 suitName = "Diamonds";
-                break;                
+                break;
         }
         return suitName;
     };
@@ -35,13 +35,13 @@ var Card = function (suit, number){
                 break;
             case 2:
                 suitName = "&clubs;";
-                break; 
+                break;
             case 3:
                 suitName = "&spades;";
-                break; 
+                break;
             case 4:
                 suitName = "&diams;";
-                break;                
+                break;
         }
         return suitName;
     };
@@ -132,7 +132,7 @@ var Hand = function (deck){
             score = 0,
             cardVal = 0, // Stashing the Card's value
             aces = 0; // Stores the # of Aces in the Hand
-        
+
         for (i=0;i<cards.length;i++){
             cardVal = cards[i].getValue();
             if (cardVal == 11) {
@@ -189,7 +189,7 @@ var BlackJack = (function ($){
         var outcome = '',
             dealerScore = dealerHand.score(),
             userScore = userHand.score();
- 
+
         /* I didn't make the rules, I just enforce them. */
         if (userScore > 21 || dealerScore === 21){
             outcome = "You lose!";
@@ -282,4 +282,4 @@ var BlackJack = (function ($){
 
     /* Make sure to shuffle. */
     deck.shuffle();
-}(jQuery));​
+}(jQuery));
