@@ -1,0 +1,136 @@
+body {
+    font-family:sans-serif;
+    padding:1em;
+}
+#yourHand {
+    overflow:hidden;
+    position:relative;
+    border:1px solid #056B42;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    background: #287B59;
+    color:#69D1A7;
+    padding:.5em;
+    font-size:1.1em;
+    height:6em;
+    width:25em;
+}
+.card {
+  background:#fff;
+  border: 1px solid gray;
+  border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+  -moz-box-shadow:0 2px 2px 1px #999;
+    -webkit-box-shadow:0px 2px 2px 1px #999;
+    box-shadow:0 2px 2px 1px #999;
+  font-size: 20pt;
+  float: left;
+  width:  3.75em;
+  height: 5em;
+  padding:.1em;
+  margin-right:-1em;
+ font-family:serif;
+}
+.card:first-child {margin-left:0;}
+
+.Spades, .Clubs {color:black}
+.Diamonds, .Hearts {color:red}
+
+#deal {
+    -moz-box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9f71d1), color-stop(1, #3a096a) );
+    background:-moz-linear-gradient( center top, #9f71d1 5%, #3a096a 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9f71d1', endColorstr='#3a096a');
+    background-color:#9f71d1;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #3a096a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:7px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #3a096a;
+}
+#deal:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3a096a), color-stop(1, #9f71d1) );
+    background:-moz-linear-gradient( center top, #3a096a 5%, #9f71d1 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a096a', endColorstr='#9f71d1');
+    background-color:#3a096a;
+}
+
+#hitMe {
+    -moz-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #10a469), color-stop(1, #056b42) );
+    background:-moz-linear-gradient( center top, #10a469 5%, #056b42 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#10a469', endColorstr='#056b42');
+    background-color:#10a469;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #287b58;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:7px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #287b58;
+}
+#hitMe:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #056b42), color-stop(1, #10a469) );
+    background:-moz-linear-gradient( center top, #056b42 5%, #10a469 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#056b42', endColorstr='#10a469');
+    background-color:#056b42;
+}
+#hitMe:active {
+    position:relative;
+    top:1px;
+}
+#stand {
+    -moz-box-shadow:inset 0px -1px 4px 3px #f8ac7d;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #f8ac7d;
+    box-shadow:inset 0px -1px 4px 3px #f8ac7d;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f89350), color-stop(1, #f16e17) );
+    background:-moz-linear-gradient( center top, #f89350 5%, #f16e17 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f89350', endColorstr='#f16e17');
+    background-color:#f89350;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #b5693a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:7px 13px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #9d4307;
+}
+#stand:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f16e17), color-stop(1, #f89350) );
+    background:-moz-linear-gradient( center top, #f16e17 5%, #f89350 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16e17', endColorstr='#f89350');
+    background-color:#f16e17;
+}
+#stand:active {
+    position:relative;
+    top:1px;
+}
+
+#hitMe, #stand {display:none;}
+#yourScore .digits {font-weight:700}
+#wins {color:#056B42;}
+#losses {color:#F16D17;}
+​
